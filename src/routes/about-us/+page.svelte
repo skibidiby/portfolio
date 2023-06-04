@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { fly } from 'svelte/transition';
 	import { onMount } from 'svelte';
 	let ready: boolean = false;
 	onMount(() => (ready = true));
@@ -9,7 +8,12 @@
 	<div class="container">
 		{#if ready}
 			<div class="content">
-				<h1>About-me</h1>
+				<h1>A bit about me</h1>
+				<p>
+					I have no idea how you landed here, but it's nice to meet you!
+					I am a young person with aburning passion about technologies and programming.
+                    I have professional experience in Web development mainly in React.js but in my spare time I love to work on personal projects with a wide variety of different tools.
+				</p>
 			</div>
 		{/if}
 	</div>
@@ -28,10 +32,15 @@
 		color: white;
 		margin-top: auto;
 		width: 100%;
-		height: 100%;}
+		height: 100%;
+	}
 	.container .content {
 		align-items: center;
 		margin-left: 20px;
 		font-size: 50px;
+	}
+	.container .content p{
+		font-size: 30px;
+        max-width: 1000px;
 	}
 </style>

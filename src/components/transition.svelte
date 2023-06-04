@@ -4,9 +4,7 @@
 </script>
 
 {#key url}
-<div
-in:fly={ {y: 200, duration: 1500 }}
->
+	<div in:fly={{ y: 200, duration: 1000 }}>
 		<slot />
 	</div>
 {/key}
