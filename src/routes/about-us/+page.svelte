@@ -5,32 +5,30 @@
 	onMount(() => (ready = true));
 </script>
 
-<div class="home">
+<div class="about">
 	<div class="container">
 		{#if ready}
 			<div class="content">
-				<h1>Hello, I am Victor!</h1>
-				<p>I like to code and stuff.</p>
+				<h1>About-me</h1>
 			</div>
 		{/if}
 	</div>
 </div>
 
 <style>
-	.home {
+	.about {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		height: 100dvh;
 	}
-	.home .container {
+	.about .container {
 		display: flex;
 		align-items: center;
 		color: white;
 		margin-top: auto;
 		width: 100%;
-		height: 100%;
-	}
+		height: 100%;}
 	.container .content {
 		align-items: center;
 		margin-left: 20px;

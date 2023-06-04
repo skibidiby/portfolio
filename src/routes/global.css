@@ -1,0 +1,5 @@
+body{
+    background: rgb(74, 120, 218);
+    background: url('noise.png'),
+        linear-gradient(149deg, rgb(34 52 90) 29%, rgb(11 114 135) 72%, rgb(55 171 80) 100%);
+}
