@@ -12,7 +12,7 @@
 		<div class="logo"><img src="logo.svg" alt="logo" /></div>
 	</a>
 	<a href="/contacts">Contacts</a>
-	<a href="/github">Github</a>
+	<a href="https://github.com/skibidiby" target="_blank">Github</a>
 </nav>
 <Transition url={$page.url}>
 	<slot />
