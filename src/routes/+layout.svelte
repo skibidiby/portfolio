@@ -1,7 +1,8 @@
-<script>
+<script lang="ts">
 	import './global.css';
 	import { page } from '$app/stores';
 	import Transition from '../components/transition.svelte';
+	let mobile: boolean = false;
 </script>
 
 <nav class="navbar">
@@ -10,7 +11,7 @@
 	<a href="/">
 		<div class="logo"><img src="logo.svg" alt="logo" /></div>
 	</a>
-	<a href="/links">Links</a>
+	<a href="/contacts">Contacts</a>
 	<a href="/github">Github</a>
 </nav>
 <Transition url={$page.url}>
@@ -39,5 +40,17 @@
 	.navbar .logo img {
 		min-height: 80px;
 		padding-top: 5px;
+	}
+	@media only screen and (max-width: 1200px) {
+		.navbar a .logo {
+			display: none;
+		}
+		.navbar a {
+			padding-right: 5px;
+		}
+		.navbar {
+			width: max-content;
+			overflow-x: scroll;
+		}
 	}
 </style>

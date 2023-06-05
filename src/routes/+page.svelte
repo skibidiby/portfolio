@@ -35,4 +35,10 @@
 		margin-left: 20px;
 		font-size: 50px;
 	}
+	@media only screen and (max-width: 1200px) {
+		.home {
+			height: 100dvh;
+			width: 100dvw;
+		}
+	}
 </style>

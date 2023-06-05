@@ -13,7 +13,7 @@
 				<h1>A bit about me</h1>
 				<p>
 					I have no idea how you landed here, but it's nice to meet you! I am a young person with
-					aburning passion about technologies and programming. I have professional experience in Web
+					a burning passion about technologies and programming. I have professional experience in Web
 					development mainly in React.js but in my spare time I love to work on personal projects
 					with a wide variety of different tools.
 				</p>
