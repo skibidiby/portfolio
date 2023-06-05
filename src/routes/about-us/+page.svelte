@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	// @ts-ignore
 	import { LottiePlayer } from '@lottiefiles/svelte-lottie-player';
 	let ready: boolean = false;
 	onMount(() => (ready = true));
@@ -17,7 +18,7 @@
 					with a wide variety of different tools.
 				</p>
 			</div>
-			<LottiePlayer src="diagram.json" autoplay={true} />
+			<LottiePlayer src="diagram.json" autoplay={true} controlsLayout={undefined} background={undefined} controls={undefined} height={undefined} width={undefined}/>
 		{/if}
 	</div>
 </div>
@@ -54,7 +55,7 @@
 		.about .container {
 			flex-direction: column;
 		}
-		.container .content p{
+		.container .content p {
 			width: 100%;
 		}
 	}
