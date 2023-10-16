@@ -1,17 +1,17 @@
 <script lang="ts">
 	import './global.css';
 	import { page } from '$app/stores';
+	import { base } from "$app/paths";
 	import Transition from '../components/transition.svelte';
-	let mobile: boolean = false;
 </script>
 
 <nav class="navbar">
-	<a href="/about-us">About me</a>
-	<a href="/projects">Projects</a>
-	<a href="/">
+	<a href="{base}/about-us">About me</a>
+	<a href="{base}/projects">Projects</a>
+	<a href="{base}/">
 		<div class="logo"><img src="logo.svg" alt="logo" /></div>
 	</a>
-	<a href="/contacts">Contacts</a>
+	<a href="{base}/contacts">Contacts</a>
 	<a href="https://github.com/skibidiby" target="_blank">Github</a>
 </nav>
 <Transition url={$page.url}>

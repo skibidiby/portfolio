@@ -1,4 +1,5 @@
 <script lang="ts">
+	export const trailingSlash = 'always';
 	import { onMount } from 'svelte';
 	let ready: boolean = false;
 	onMount(() => (ready = true));
