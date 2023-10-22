@@ -35,11 +35,12 @@
 		align-items: center;
 		margin-left: 20px;
 		font-size: 50px;
+		width: 100%;
 	}
-	@media only screen and (max-width: 1200px) {
+	/* @media only screen and (max-width: 1200px) {
 		.home {
 			height: 100dvh;
 			width: 100dvw;
 		}
-	}
+	} */
 </style>
