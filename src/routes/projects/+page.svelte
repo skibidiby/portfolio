@@ -15,7 +15,7 @@
 		},
 		{
 			name: 'Mira maritime',
-			description: 'Website, employement portal and admin panel for a maritime company',
+			description: 'Employement portal and admin panel for a maritime company',
 			image: 'portfolio/Mica.png',
 			link: 'https://mica-maritime.web.app/'
 		},
@@ -98,6 +98,7 @@
 	.container .content {
 		align-items: center;
 		margin-left: 20px;
+		margin-top: 50px;
 		font-size: 50px;
 	}
 	.container .content {
@@ -131,7 +132,7 @@
 	.container .content .description img {
 		border: 2px white solid;
 		border-radius: 10px;
-		max-width: 1000px;
+		max-width: 70dvw;
 	}
 	.container .content .name .active {
 		font-weight: bold;
@@ -147,7 +148,7 @@
 		outline: inherit;
 		padding-bottom: 10px;
 	}
-	@media only screen and (max-width: 1200px) {
+	@media only screen and (max-width: 900px) {
 		.portfolio{
 			height: 100dvh;
 			width: 100dvw;

@@ -9,8 +9,8 @@
 	<div class="container">
 		{#if ready}
 			<div class="content">
-				<h1>Hello, I am Victor!</h1>
-				<p>I like to code and stuff.</p>
+				<h1>Hello, I'm Victor</h1>
+				<p>I'm a developer with passion for technology and creativity</p>
 			</div>
 		{/if}
 	</div>
