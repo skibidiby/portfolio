@@ -165,4 +165,22 @@
 		max-width: 100%;
 	}
 	}
+	@media only screen and (max-height: 700px) {
+		.portfolio{
+			width: 100dvw;
+			min-height: 900px;
+			overflow-y: auto;
+		}
+		.container .content .projects {
+			min-height: 1000px;
+		}
+		/* .container .content .projects {
+			flex-direction: column;
+		}
+		.container .content .description img {
+		border: 2px white solid;
+		border-radius: 10px;
+		max-width: 100%;
+	} */
+	}
 </style>

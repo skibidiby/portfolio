@@ -39,7 +39,7 @@
 	<div class="container">
 		<h1>Contact me</h1>
 		{#if ready}
-		<div class="content">
+			<div class="content">
 				<form on:submit={() => postMessage(form_data)}>
 					<div>
 						<label for="name">Name</label>
@@ -83,7 +83,7 @@
 		color: white;
 		width: 100%;
 	}
-	.about .container h1{
+	.about .container h1 {
 		font-size: 100px;
 		padding-left: 20px;
 	}
@@ -118,17 +118,22 @@
 	.container .content .submit {
 		justify-content: flex-end;
 	}
-	.container .content .submit input{
+	.container .content .submit input {
 		cursor: pointer;
 	}
 	.container .content {
 		font-size: 30px;
 	}
 	@media only screen and (max-width: 1200px) {
+		.about {
+			width: 100%;
+			min-height: 900px;
+			overflow-y: auto;
+		}
 		.container .content div {
-		display: flex;
-		flex-direction: column;
-		padding-bottom: 5px;
-	}
+			display: flex;
+			flex-direction: column;
+			padding-bottom: 5px;
+		}
 	}
 </style>

@@ -37,10 +37,14 @@
 		font-size: 50px;
 		width: 100%;
 	}
-	/* @media only screen and (max-width: 1200px) {
+	@media only screen and (max-width: 1200px) {
 		.home {
-			height: 100dvh;
-			width: 100dvw;
+			width: 100%;
+			min-height: 900px;
+			overflow-y: auto;
 		}
-	} */
+		.container .container {
+			min-height: 1000px;
+		}
+	}
 </style>

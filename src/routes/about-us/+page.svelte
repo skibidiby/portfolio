@@ -49,10 +49,12 @@
 	}
 	@media only screen and (max-width: 1200px) {
 		.about {
-			height: 100%;
-			width: 100%;
+			min-height: fit-content;
+			width: 100dvw;
+			/* overflow-y: scroll; */
 		}
 		.about .container {
+			min-height: 1000px;
 			flex-direction: column;
 		}
 		.container .content p {
