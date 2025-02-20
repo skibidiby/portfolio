@@ -1,56 +1,119 @@
 ---
-import Work1 from '../assets/work-1.png'
-import Work2 from '../assets/work-2.png'
-import Work3 from '../assets/work-3.png'
-import Work4 from '../assets/work-4.png'
+import Work1 from "../assets/portfolio/AMARANT.png";
+import Work2 from "../assets/portfolio/Mica.png";
+import Work3 from "../assets/portfolio/UNI_Bank.png";
+import Work4 from "../assets/portfolio/APOLONIA_RESORT_HOTEL.png";
+import Work5 from "../assets/portfolio/NaOpaki.png";
+import Work6 from "../assets/portfolio/HydroPro.png";
+import Work7 from "../assets/portfolio/ucalc.png";
+import Work8 from "../assets/portfolio/EUROINS_HEALTH.png";
+import Work9 from "../assets/portfolio/EUROINS.png";
+import { Image } from "astro:assets";
+interface Project {
+  name: string;
+  description: string;
+  image: ImageMetadata;
+  link: string;
+  skills: string[];
+}
+const projects: Project[] = [
+  {
+    name: "Amarant",
+    description: "Insurance broker website and mobile application",
+    image: Work1,
+    link: "https://www.amarantbg.com/",
+    skills: ["React JS", "React Native", "AWS", "Node.js"],
+  },
+  {
+    name: "Mira maritime",
+    description: "Employement portal and admin panel for a maritime company",
+    image: Work2,
+    link: "https://mica-maritime.web.app/",
+    skills: ["React JS", "Firebase", "Material UI"],
+  },
+  {
+    name: "UNIbank",
+    description: "Electronic banking platform of the Macedonian UNIbank",
+    image: Work3,
+    link: "https://www.unibank.mk/ ",
+    skills: ["React JS", "Redux", "Node.js", "MongoDB"],
+  },
+  {
+    name: "Apolonia resort",
+    description: "Hotel information site and reservation system",
+    image: Work4,
+    link: "https://apoloniaresort.com/",
+    skills: ["React JS", "Node.js", "MongoDB"],
+  },
+  {
+    name: "NaOpaki",
+    description: "Environmental packaging exchange site",
+    image: Work5,
+    link: "https://www.naopaki.bg/",
+    skills: ["React JS", "Node.js", "SquareSpace"],
+  },
+  {
+    name: "HydroPro",
+    description: "Website and online catalog of a plumbing company",
+    image: Work6,
+    link: "https://hydropro.bg/",
+    skills: ["React JS", "Node.js", "MongoDB"],
+  },
+  {
+    name: "Ucalc",
+    description:
+      "Plaform in beta state to calculate finances for foreign students.",
+    image: Work7,
+    link: "https://ucalc.app/",
+    skills: ["React JS", "Node.js", "Firebase"],
+  },
+  {
+    name: "Euroins Health",
+    description: "Health insurance company portal",
+    image: Work8,
+    link: "http://myhealth.euroins.bg/",
+    skills: ["React JS", "Material UI", ".NET"],
+  },
+  {
+    name: "Euroins",
+    description: "Multiple insurances company portal",
+    image: Work9,
+    link: "https://my.euroins.bg/",
+    skills: ["React JS", "Material UI", ".NET"],
+  },
+];
 ---
 
 <section>
-    <h2 class="heading-1">Take a look at these digital gems and <span class="green">discover</span> how I turn <span class="pink">ideas</span> into <span class="violet">realities.</span></h2>
-    <ul class="projects">
+  <h2 class="heading-1">
+    Take a look at these digital gems and <span class="green">discover</span> how
+    I turn <span class="pink">ideas</span> into <span class="violet"
+      >realities.</span
+    >
+  </h2>
+  <ul class="projects">
+    {
+      projects.map((project) => (
         <li class="card">
-            <figure class="card-picture">
-                <img src={Work1.src} alt="Anything project">
-            </figure>
-            <h3 class="heading-3"><a href="#">Newspaper app</a></h3>
-            <ul class="card-skills">
-                <li class="card-tag">React</li>
-                <li class="card-tag">Nest.js</li>
-                <li class="card-tag">MySql</li>
-            </ul>
+          <figure class="card-picture">
+            <Image
+              src={project.image}
+              alt={project.name}
+              width={1000}
+              height={300}
+            />
+          </figure>
+          <h3 class="heading-3">
+            <a href={project.link}>{project.name}</a>
+          </h3>
+          <p class="text-normal">{project.description}</p>
+          <ul class="card-skills">
+            {project.skills.map((skill) => (
+              <li class="card-tag">{skill}</li>
+            ))}
+          </ul>
         </li>
-        <li class="card">
-            <figure class="card-picture">
-                <img src={Work2.src} alt="Anything project">
-            </figure>
-            <h3 class="heading-3"><a href="#">Mechanical keyboard</a></h3>
-            <ul class="card-skills">
-                <li class="card-tag">React</li>
-                <li class="card-tag">Nest.js</li>
-                <li class="card-tag">MySql</li>
-            </ul>
-        </li>
-        <li class="card">
-            <figure class="card-picture">
-                <img src={Work3.src} alt="Anything project">
-            </figure>
-            <h3 class="heading-3"><a href="#">Email app</a></h3>
-            <ul class="card-skills">
-                <li class="card-tag">React</li>
-                <li class="card-tag">Nest.js</li>
-                <li class="card-tag">MySql</li>
-            </ul>
-        </li>
-        <li class="card">
-            <figure class="card-picture">
-                <img src={Work4.src} alt="Anything project">
-            </figure>
-            <h3 class="heading-3"><a href="#">Delivery app</a></h3>
-            <ul class="card-skills">
-                <li class="card-tag">React</li>
-                <li class="card-tag">Nest.js</li>
-                <li class="card-tag">MySql</li>
-            </ul>
-        </li>
-    </ul>
+      ))
+    }
+  </ul>
 </section>

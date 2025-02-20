@@ -1,0 +1,23 @@
+<script
+  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+  type="module"></script>
+<div class="player-lottie">
+  <dotlottie-player
+    src={"./diagram.json"}
+    background="transparent"
+    speed="1"
+    direction="1"
+    playMode="normal"
+    style={{
+      width: 258,
+      margin: 0,
+    }}
+    autoplay></dotlottie-player>
+</div>
+<style>
+  .player-lottie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>

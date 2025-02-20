@@ -220,8 +220,14 @@ ul {
 }
 
 /* Cards */
-.card-picture img {
+.card-picture
+{
+    width: 100%;
+    display: flex;
+      img{
     border-radius: 0.5rem;
+    height: fit-content;
+}
 }
 
 .card .heading-3 {

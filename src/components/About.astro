@@ -1,15 +1,37 @@
 ---
-import User from '../assets/Image.png'
+import { Image } from "astro:assets";
+import User from "../assets/Image.png";
 ---
 
 <section class="about" id="about">
-    <figure class="about-picture">
-        <img src={User.src} alt="Juan Garcia picture">
-    </figure>
-    <article class="about-bio">
-        <h2 class="heading-2">Hello, I'm Juan, a passionate web developer with over 10 years of experience in the industry.</h2>
-        <p class="text-normal">Throughout my career, I have faced and overcome various challenges that have strengthened my ability to find innovative solutions in the development world.</p>
-        <p class="text-normal">From my early days as an apprentice to leading development teams in large-scale projects, each experience has been a fundamental pillar in my professional growth. I take pride in contributing to the success of numerous projects, from e-commerce platforms to award-winning mobile applications.</p>
-        <p class="text-normal">My focus has always been on transforming ideas into digital realities, using cutting-edge technologies and agile methodologies. This passion for creation and problem-solving has led me to constantly explore new trends and stay updated in a technology landscape that is always evolving</p>
-    </article>
+  <figure class="about-picture">
+    <Image src={User} alt="Juan Garcia picture" width="150" height="150" />
+  </figure>
+  <article class="about-bio">
+    <h2 class="heading-2">
+      Welcome to my personal <span class="violet">portfolio</span>!
+    </h2>
+    <p class="text-normal">
+      I have no idea how you landed here, but it's nice to meet you! I am a
+      creative person with a burning passion about technologies and programming.
+      I have professional experience in Web development mainly in React.js but
+      in my spare time I love to work on personal projects with a wide variety
+      of different tools.
+    </p>
+    <p class="text-normal">
+      I’m always eager to explore new frameworks, languages, and methodologies
+      to push my skills further. Whether it’s building interactive front-end
+      experiences, optimizing back-end performance, or experimenting with AI and
+      automation, I enjoy the challenge of turning ideas into reality.
+    </p>
+    <p class="text-normal">
+      Beyond coding, I have a deep appreciation for design, UX principles, and
+      creating seamless user experiences. I believe that well-crafted software
+      is a perfect blend of functionality and aesthetics.
+    </p>
+    <p class="text-normal">
+      When I’m not behind my keyboard, you’ll probably find me listening to
+      music, reading books or drinking beer with mates 🍺
+    </p>
+  </article>
 </section>
